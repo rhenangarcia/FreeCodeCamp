@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body
+{
+  font-family: 'Roboto Mono', sans-serif;
+  background-color: #DFDFE2;
+  margin: 0;
+}
+
+h1,
+h2
+{
+  margin: 0;
+  color: #0A0A23;
+  text-align: center;
+}
+
+img
+{
+  height: 2.5rem;
+}
+
+p
+{
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.container
+{
+  max-width: 800px;
+  padding: 1rem 2.5rem;
+  margin: 0 auto;
+}
+
+.container-title
+{
+  margin-bottom: 1.5rem;
+}
+
+.tl-container
+{
+  position: relative;
+  padding-top: 5.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.tl-container:before
+{
+  content: "";
+  background-color: #0A0A23;
+  position: absolute;
+  top: 0;
+  width: 0.25rem;
+  height: 100%;
+}
+
+.img-fire
+{
+  position: absolute;
+  top: 0;
+  height: 3.4rem !important;
+  background-color: #DFDFE2;
+}
+
+.tl-group
+{
+  position: relative;
+  padding-top: 4.56rem;
+}
+
+.tl-year
+{
+  min-width: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #0A0A23;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.tl-box
+{
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.tl-box:before
+{
+  content: "";
+  background-color: #0A0A23;
+  position: absolute;
+  z-index: -1;
+}
+
+.tl-date
+{
+  min-width: 5rem;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  background-color: #0A0A23;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+.tl-day
+{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.tl-month
+{
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 1.5rem;
+}
+
+.tl-content
+{
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, .12), 0 0.1rem 0.2rem 0 rgba(0, 0, 0, .24);
+  background-color: #fff;
+}
+
+.tl-content h2
+{
+  margin-bottom: 1.25rem;
+}
+
+.flex
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-link
+{
+  margin-top: 0.5rem;
+}
+
+.content-link img
+{
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.content-link a
+{
+  padding: 0.4rem;
+  max-width: 11.5rem;
+  width: 100%;
+  border: 0.15rem solid #0A0A23;
+  border-radius: 0.25rem;
+  color: #0A0A23;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.content-link a:hover
+{
+  background: #0A0A23;
+  color: #fff;
+}
+
+@media screen and (min-width: 641px)
+{
+  html
+  {
+    font-size: 16px;
+  }
+
+  .container-title img
+  {
+    margin: 0 1.5rem;
+  }
+
+  .tl-container:before
+  {
+    left: 2.4rem;
+  }
+
+  .tl-year
+  {
+    border-radius: 50%;
+  }
+
+  .tl-box
+  {
+    padding-left: 6rem;
+  }
+
+  .tl-box:before
+  {
+    width: 100%;
+    height: 0.15rem;
+    top: 50%;
+    left: 0;
+  }  
+
+  .tl-date
+  {
+    border-radius: 25%;
+  }
+
+  .tl-dt-2r
+  {
+    top: 20%;
+  }
+
+  .tl-content
+  {
+    border-left: 0.25rem solid #0A0A23;
+  }
+}
+
+@media screen and (max-width: 640px)
+{
+  html
+  {
+    font-size: 14px;
+  }
+
+  .container-title img
+  {
+    margin: 0 0.5rem;
+  }
+
+  .img-fire
+  {
+    left: -2.375rem;
+  }
+
+  .tl-box
+  {
+    padding-top: 6rem;
+    padding-left: 1.25rem;
+  }
+
+  .tl-box:before
+  {
+    width: 0.15rem;
+    height: 100%;
+    top: 0;
+    left: 2.5rem;
+  }    
+
+  .tl-date
+  {
+    top: 0;
+  }
+
+  .tl-content
+  {
+    border-top: 0.25rem solid #0A0A23;
+  }
+}
